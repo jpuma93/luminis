@@ -1,0 +1,19 @@
+<form [formGroup]="form" (ngSubmit)="recovery()" fxLayout="column" fxLayoutAlign="center center" autocomplete="off">
+    <div class="logo">
+        <img src="/assets/img/logo.jpg" alt="" />
+    </div>
+    <h1 class="title">Recuperar contraseña</h1>
+    <div class="wrapper-field">
+        <mat-form-field appearance="outline">
+            <mat-label>Correo</mat-label>
+            <input matInput placeholder="Ingrese su correo electronico" formControlName="correo" />
+            <button type="button" mat-icon-button matSuffix>
+                <mat-icon>email</mat-icon>
+            </button>
+            <mat-hint>Validacion</mat-hint>
+        </mat-form-field>
+    </div>
+    <div class="wrapper-field">
+        <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Enviar</button>
+    </div>
+</form>

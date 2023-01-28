@@ -1,0 +1,53 @@
+.home-wrapper {
+    height: 100%;
+}
+.welcome {
+    font-size: 2.5rem;
+}
+.list-application {
+    margin-top: 50px;
+}
+.application {
+    height: 150px;
+    flex-basis: 150px;
+    background-color: white;
+    border: 1px solid #0092e4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.application:hover {
+    transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+}
+.application-name {
+    color: #0092e4;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.ic-memberships {
+    background-image: url('./../../../../../assets/icons/ic_membership.svg');
+}
+.ic-products {
+    background-image: url('./../../../../../assets/icons/ic_products.svg');
+}
+.ic-reports {
+    background-image: url('./../../../../../assets/icons/ic_reports.svg');
+}
+.ic-settings {
+    background-image: url('./../../../../../assets/icons/ic_settings.svg');
+}

@@ -1,0 +1,26 @@
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.logo img {
+    height: 65px;
+    width: 100%;
+}
+
+div {
+    width: 80%;
+    margin-bottom: 10px;
+}
+div mat-form-field {
+    width: 100%;
+}
+div button {
+    width: 100%;
+}
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.wrapper-field {
+    width: 100%;
+}

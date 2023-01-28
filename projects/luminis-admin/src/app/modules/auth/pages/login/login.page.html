@@ -1,0 +1,37 @@
+<form [formGroup]="form" (ngSubmit)="login()" fxLayout="column" fxLayoutAlign="center center" autocomplete="off">
+    <div class="logo">
+        <img src="/assets/img/logo.jpg" alt="" />
+    </div>
+    <h1 class="title">Iniciar Sesión</h1>
+    <div class="wrapper-field">
+        <mat-form-field appearance="outline">
+            <mat-label>Correo</mat-label>
+            <input matInput placeholder="Ingrese su correo electronico" formControlName="correo" />
+            <button type="button" mat-icon-button matSuffix>
+                <mat-icon>email</mat-icon>
+            </button>
+            <mat-hint>Validacion</mat-hint>
+        </mat-form-field>
+    </div>
+    <div class="wrapper-field">
+        <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input
+                matInput
+                [type]="hide ? 'password' : 'text'"
+                placeholder="Ingrese su contraseña"
+                formControlName="password"
+            />
+            <button type="button" mat-icon-button matSuffix (click)="hide = !hide">
+                <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+            <mat-hint>Validacion</mat-hint>
+        </mat-form-field>
+    </div>
+    <div fxLayout fxLayoutAlign="end">
+        <a routerLink="/auth/recovery">¿Olvidaste tu contraseña?</a>
+    </div>
+    <div class="wrapper-field">
+        <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Ingresar</button>
+    </div>
+</form>

@@ -1,0 +1,9 @@
+<section class="home-wrapper" fxLayout="column" fxLayoutAlign="center center">
+    <label class="welcome"><b>Hola</b>, Jerson Willinton</label>
+    <div class="list-application" fxLayout fxLayoutAlign="center" fxLayoutGap="30px">
+        <a class="application" fxFlex="1 1 150px" [routerLink]="item.path" *ngFor="let item of menuOptions">
+            <div [ngClass]="['icons',item.icon]"></div>
+            <label class="application-name">{{item.name}}</label>
+        </a>
+    </div>
+</section>

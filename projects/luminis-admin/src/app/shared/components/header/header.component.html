@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" fxLayout fxLayoutAlign="end">
+    <button mat-button [matMenuTriggerFor]="menu">
+        <img src="/assets/img/avatar.png" alt="" />
+        <span>Jose Chavez</span>
+        <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>account_circle</mat-icon>
+            <span>Perfil</span>
+        </button>
+        <button mat-menu-item (click)="logout()">
+            <mat-icon>logout</mat-icon>
+            <span>Cerrar Sesión</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>
